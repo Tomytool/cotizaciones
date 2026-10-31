@@ -1,0 +1,221 @@
+<svg
+  xmlns="http://www.w3.org/2000/svg"
+  viewBox="0 0 240 220"
+  width="100%"
+  height="100%"
+  role="img"
+  aria-labelledby="mgsg-logo-title mgsg-logo-desc"
+>
+  <title id="mgsg-logo-title">
+    Constructora María Graciela Silva Gallardo - Logo MGSG
+  </title>
+  <desc id="mgsg-logo-desc">
+    Emblema circular verde sobre fondo oscuro con cuatro herramientas de
+    construcción (martillo, llana, llave y serrucho), tres techos entrelazados
+    con ventanas y la sigla MGSG en la base.
+  </desc>
+
+  <defs>
+    <style>
+      .bg-dark { fill: #101518; }
+      .brand-green { fill: #1db93b; }
+      .brand-green-stroke {
+         fill: none;
+        stroke: #1db93b;
+        stroke-width: 13;
+        stroke-linecap: butt;
+      }
+      .silver { fill: #d0d5d9; }
+      .roof-stroke {
+        stroke: #101518;
+        stroke-width: 3.5;
+        stroke-linejoin: miter;
+      }
+      .mgsg-text {
+        font-family: 'Arial Black', 'Segoe UI', Arial, sans-serif;
+        font-weight: 900;
+        font-size: 30px;
+        fill: #1db93b;
+        letter-spacing: 1.5px;
+      }
+    </style>
+  </defs>
+
+  <!-- 1. Fondo oscuro -->
+  <rect class="bg-dark" x="0" y="0" width="240" height="220" rx="10" />
+
+  <!-- 2. Anillo circular verde (arco superior y arco inferior) -->
+  <g id="green-ring">
+    <!-- Arco superior (desde el alero izquierdo hasta el alero derecho) -->
+    <path
+      class="brand-green-stroke"
+      d="M 28,96 A 93,93 0 0,1 212,96"
+    />
+    <!-- Arco inferior (debajo de los aleros laterales encerrando MGSG) -->
+    <path
+      class="brand-green-stroke"
+      d="M 36,151 A 93,93 0 0,0 204,151"
+    />
+  </g>
+
+  <!-- 3. Cuatro herramientas de construcción superiores -->
+  <g id="tools" class="silver">
+    <!-- 3.1 Martillo de uña (izquierda) -->
+    <g id="tool-hammer">
+      <!-- Mango vertical -->
+      <rect x="63" y="67" width="9" height="24" rx="1" />
+      <!-- Cabeza y uña curva del martillo -->
+      <path
+        d="M 45,56
+           L 55,56
+           L 57,59
+           L 61,59
+           L 63,56
+           L 74,56
+           C 82,56 89,61 93,68
+           C 88,65 82,63 75,64
+           L 72,67
+           L 63,67
+           L 61,64
+           L 57,64
+           L 55,66
+           L 45,66
+           Z"
+      />
+    </g>
+
+    <!-- 3.2 Pala / Llana de albañilería (centro-izquierda) -->
+    <g id="tool-trowel">
+      <!-- Hoja redondeada superior -->
+      <path
+        d="M 105,34
+           C 113,34 121,46 121,55
+           L 121,70
+           C 121,73 118,75 114,73
+           L 105,69
+           L 96,73
+           C 92,75 89,73 89,70
+           L 89,55
+           C 89,46 97,34 105,34
+           Z"
+      />
+      <!-- Mango inferior -->
+      <rect x="101" y="72" width="8" height="21" rx="1" />
+    </g>
+
+    <!-- 3.3 Llave fija / inglesa (centro-derecha) -->
+    <g id="tool-wrench">
+      <path
+        fill-rule="evenodd"
+        d="M 136,41
+           C 130,45 128,53 130,60
+           L 135,69
+           L 135,92
+           L 145,92
+           L 145,69
+           L 150,60
+           C 152,53 150,45 144,41
+           L 143,52
+           L 137,52
+           Z
+           M 139,74
+           L 141.5,74
+           L 141.5,91
+           L 139,91
+           Z"
+      />
+    </g>
+
+    <!-- 3.4 Serrucho de mano (derecha) -->
+    <g id="tool-saw">
+      <path
+        fill-rule="evenodd"
+        d="M 157,45
+           L 163,45
+           L 165,50
+           L 178,50
+           L 182,45
+           L 185,46
+           L 183,61
+           L 179,66
+           L 189,69
+           L 184,91
+           L 158,91
+           L 158,64
+           L 160,62
+           L 157,59
+           Z
+           M 163,55
+           C 161.5,55 161,56.5 161,58
+           C 161,59.5 161.5,61 163,61
+           L 176,61
+           C 177.5,61 178,59.5 178,58
+           C 178,56.5 177.5,55 176,55
+           Z"
+      />
+    </g>
+  </g>
+
+  <!-- 4. Paneles verdes del techo entre las cumbreras -->
+  <g id="green-roof-panels" class="brand-green">
+    <!-- Panel triangular verde izquierdo -->
+    <polygon points="56,92 114,94 84,121" />
+    <!-- Panel triangular verde derecho -->
+    <polygon points="126,94 184,92 156,121" />
+  </g>
+
+  <!-- 5. Tres techos entrelazados en color plata -->
+  <g id="roofs" class="silver roof-stroke">
+    <!-- Techo izquierdo -->
+    <polygon
+      points="4,139 24,139 54,109 73,128 84,117 54,87"
+    />
+    <!-- Techo derecho -->
+    <polygon
+      points="236,139 216,139 186,109 167,128 156,117 186,87"
+    />
+    <!-- Techo central principal con faldones extendidos hasta la base -->
+    <polygon
+      points="50,152 70,152 120,103 170,152 190,152 120,82"
+    />
+  </g>
+
+  <!-- 6. Ventanas de las tres casas -->
+  <g id="windows" class="silver">
+    <!-- Ventana cuadrada izquierda (4 paneles) -->
+    <g id="window-left">
+      <rect x="42" y="122" width="7" height="6" />
+      <rect x="51" y="122" width="7" height="6" />
+      <rect x="42" y="130" width="7" height="6" />
+      <rect x="51" y="130" width="7" height="6" />
+    </g>
+
+    <!-- Ventana central en arco de medio punto (4 paneles) -->
+    <g id="window-center">
+      <!-- Panel superior izquierdo (cuarto de círculo) -->
+      <path d="M 106,137 A 12,12 0 0,1 118,125 L 118,137 Z" />
+      <!-- Panel superior derecho (cuarto de círculo) -->
+      <path d="M 122,125 A 12,12 0 0,1 134,137 L 122,137 Z" />
+      <!-- Panel inferior izquierdo -->
+      <rect x="106" y="140" width="12" height="11" />
+      <!-- Panel inferior derecho -->
+      <rect x="122" y="140" width="12" height="11" />
+    </g>
+
+    <!-- Ventana cuadrada derecha (4 paneles) -->
+    <g id="window-right">
+      <rect x="182" y="122" width="7" height="6" />
+      <rect x="191" y="122" width="7" height="6" />
+      <rect x="182" y="130" width="7" height="6" />
+      <rect x="191" y="130" width="7" height="6" />
+    </g>
+  </g>
+
+  <!-- 7. Sigla MGSG en la parte inferior -->
+  <g id="wordmark-mgsg">
+    <text x="120" y="182" text-anchor="middle" class="mgsg-text">
+      MGSG
+    </text>
+  </g>
+</svg>
+
